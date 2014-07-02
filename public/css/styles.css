@@ -1,0 +1,513 @@
+/* line 17, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url(http://themes.googleusercontent.com/static/fonts/roboto/v11/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Regular"), local("Roboto-Regular"), url(http://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url(http://themes.googleusercontent.com/static/fonts/roboto/v11/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Slab Light"), local("RobotoSlab-Light"), url(http://themes.googleusercontent.com/static/fonts/robotoslab/v3/dazS1PrQQuCxC3iOAJFEJR_xHqYgAV9Bl_ZQbYUxnQU.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"), url(http://themes.googleusercontent.com/static/fonts/robotoslab/v3/y7lebkjgREBJK96VQi37ZobN6UDyHWBl620a-IRfuBk.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), url(http://themes.googleusercontent.com/static/fonts/robotoslab/v3/dazS1PrQQuCxC3iOAJFEJTqR_3kx9_hJXbbyU8S6IN0.woff) format("woff");
+}
+
+/* line 41, ../../sass/partials/globals/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", arial, sans-serif;
+  text-align: center;
+}
+
+/* line 47, ../../sass/partials/globals/_typography.scss */
+h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* line 56, ../../sass/partials/globals/_typography.scss */
+p {
+  text-align: justify;
+  line-height: 20px;
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 16px;
+}
+
+/* line 2, ../../sass/partials/globals/_globals.scss */
+body {
+  background: white;
+  color: #222222;
+  font-family: "Roboto", arial, sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 12, ../../sass/partials/globals/_globals.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #003a69;
+}
+
+/* line 19, ../../sass/partials/globals/_globals.scss */
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* line 25, ../../sass/partials/globals/_globals.scss */
+.stack, header, footer, section {
+  float: left;
+  width: 100%;
+  clear: both;
+}
+
+/* line 29, ../../sass/partials/globals/_globals.scss */
+.animated {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 33, ../../sass/partials/globals/_globals.scss */
+.animatedQuick {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 37, ../../sass/partials/globals/_globals.scss */
+.fitParent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 41, ../../sass/partials/globals/_globals.scss */
+.centre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 45, ../../sass/partials/globals/_globals.scss */
+.centreX {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 49, ../../sass/partials/globals/_globals.scss */
+.centreY {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 53, ../../sass/partials/globals/_globals.scss */
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+/* line 19, ../../sass/mixins/_animations.scss */
+.fadeIn:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+/* line 19, ../../sass/mixins/_animations.scss */
+.fadeIn:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+/* line 19, ../../sass/mixins/_animations.scss */
+.fadeIn:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+/* line 19, ../../sass/mixins/_animations.scss */
+.fadeIn:nth-child(4) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+/* line 19, ../../sass/mixins/_animations.scss */
+.fadeIn:nth-child(5) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/* line 1, ../../sass/partials/globals/_links.scss */
+a {
+  text-decoration: none;
+  color: #222222;
+  cursor: pointer;
+}
+
+/* line 3, ../../sass/partials/layout/_header.scss */
+header #topBar {
+  background-color: #003a69;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+}
+/* line 8, ../../sass/partials/layout/_header.scss */
+header #topBar h1 {
+  text-align: left;
+  color: white;
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 14px;
+}
+/* line 19, ../../sass/partials/layout/_header.scss */
+header nav {
+  background-color: white;
+}
+/* line 25, ../../sass/partials/layout/_header.scss */
+header nav ul li {
+  display: inline-block;
+  width: 16%;
+}
+/* line 30, ../../sass/partials/layout/_header.scss */
+header nav ul li a {
+  padding: 10px;
+  display: block;
+  color: #003a69;
+  font-font-weight: 700;
+}
+
+/* line 2, ../../sass/partials/layout/_yourScore.scss */
+#yourScore {
+  background-color: #f3f2e5;
+}
+/* line 6, ../../sass/partials/layout/_yourScore.scss */
+#yourScore h3 {
+  margin-bottom: 50px;
+  font-size: 70px;
+  font-weight: 100;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 70px 20px;
+}
+/* line 16, ../../sass/partials/layout/_yourScore.scss */
+#yourScore #data {
+  background-color: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 50px 20px;
+}
+/* line 21, ../../sass/partials/layout/_yourScore.scss */
+#yourScore #data #svgHorseshoe {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+  position: relative;
+}
+/* line 28, ../../sass/partials/layout/_yourScore.scss */
+#yourScore #data #svgHorseshoe #circle {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  position: absolute;
+  top: -150px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+/* line 39, ../../sass/partials/layout/_yourScore.scss */
+#yourScore #data #svgHorseshoe #circle .horseshoe path {
+  fill: none;
+  stroke-width: 50px;
+}
+/* line 44, ../../sass/partials/layout/_yourScore.scss */
+#yourScore #data #svgHorseshoe #circle .horseshoe path.score {
+  stroke: #fedf00;
+}
+/* line 52, ../../sass/partials/layout/_yourScore.scss */
+#yourScore #data #svgHorseshoe #circle .horseshoe path.score:after {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  display: block;
+  content: ".";
+  text-indent: -10000px;
+}
+/* line 61, ../../sass/partials/layout/_yourScore.scss */
+#yourScore #data #svgHorseshoe #circle .horseshoe path.track {
+  stroke: #f3f2e5;
+}
+/* line 67, ../../sass/partials/layout/_yourScore.scss */
+#yourScore #data #svgHorseshoe #circle .horseshoe circle {
+  fill: white;
+  stroke-width: 1px;
+  stroke: #c7c8bf;
+}
+/* line 75, ../../sass/partials/layout/_yourScore.scss */
+#yourScore #data #svgHorseshoe #circle .score {
+  color: #003a69;
+  font-weight: 700;
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 100px;
+}
+/* line 85, ../../sass/partials/layout/_yourScore.scss */
+#yourScore #data #svgHorseshoe #circle #increments {
+  bottom: 60px;
+  width: 90px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* line 91, ../../sass/partials/layout/_yourScore.scss */
+#yourScore #data #svgHorseshoe #circle #increments a {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  display: inline-block;
+  margin: 5px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+/* line 104, ../../sass/partials/layout/_yourScore.scss */
+#yourScore #data #result {
+  float: left;
+  width: 48%;
+}
+/* line 109, ../../sass/partials/layout/_yourScore.scss */
+#yourScore #data #result h4 {
+  text-align: left;
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+/* line 119, ../../sass/partials/layout/_yourScore.scss */
+#yourScore #data #result p {
+  text-align: left;
+}
+/* line 124, ../../sass/partials/layout/_yourScore.scss */
+#yourScore #data #result button {
+  float: left;
+}
+
+/* line 3, ../../sass/partials/layout/_dataChart.scss */
+#dataChart {
+  background-color: #f3f2e5;
+  height: 400px;
+}
+/* line 9, ../../sass/partials/layout/_dataChart.scss */
+#dataChart h3 {
+  font-size: 50px;
+  font-weight: 300;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+/* line 1, ../../sass/partials/layout/_footer.scss */
+footer {
+  color: white;
+  background-color: #414141;
+}
+
+/*
+##############################################################
+EXAMPLES OF DEFINING KEYFRAMES USING MIXINS -----
+##############################################################
+
+		//FADE IN -----------------------------------------------
+
+		@include transKeyframes(fadeIn,0% 100%,scale,0.8 1,fadeIn);
+
+		//FADE OUT -----------------------------------------------
+
+		@include transKeyframes(fadeOut,0% 100%,scale,1 0.8,fadeOut);
+
+		//FLICKER IN -----------------------------------------------
+
+		@include keyframes (flickerIn) {
+		  0% {   opacity:0;}
+		  5% {   opacity:0.5;}
+		  10% { opacity:0.3;}
+		  100% { opacity:1;}
+		}
+
+
+		//WIBBLE ---------------------------------------------------
+
+		$wibbleAmount: 2px;
+
+		@include keyframes(wibble) {
+		  0%   {margin-top:0}
+		  33%  {margin-top:$wibbleAmount}
+		  66%  {margin-top:-$wibbleAmount}
+		  100% {margin-top:0}
+		}
+
+*/
+@-webkit-keyframes fadeIn {
+  /* line 63, ../../sass/mixins/_animations.scss */
+  0% {
+    -webkit-transform: scale(0.8);
+    opacity: 0;
+  }
+
+  /* line 109, ../../sass/mixins/_animations.scss */
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  /* line 237, ../../sass/mixins/_animations.scss */
+  0% {
+    -moz-transform: scale(0.8);
+    opacity: 0;
+  }
+
+  /* line 283, ../../sass/mixins/_animations.scss */
+  100% {
+    -moz-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  /* line 411, ../../sass/mixins/_animations.scss */
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  /* line 457, ../../sass/mixins/_animations.scss */
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

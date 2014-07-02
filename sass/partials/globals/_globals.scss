@@ -1,0 +1,58 @@
+
+body{
+
+	background:$CXSlight;
+	color:$CXSdark;
+	font-family:$font1;
+	text-align:center;
+	overflow:hidden;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+
+    color:$CXSdarkBlue 
+}
+
+//4. Global classes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.container{
+
+	margin:0 auto;
+	max-width:$containerWidth
+}
+
+.stack, header, footer, section{
+	@include stack;
+}
+
+.animated{
+	@include single-transition(all,1s,ease)
+}
+
+.animatedQuick{
+	@include single-transition(all,0.3s,ease)
+}
+
+.fitParent{
+	@include fitParent;
+}
+
+.centre{
+	@include centre;
+}
+
+.centreX{
+	@include centre(x);
+}
+
+.centreY{
+	@include centre(y);
+}
+
+.fadeIn{
+	@include animation(fadeIn,ease,0.5s,5,0.2s);
+}
+
+
+

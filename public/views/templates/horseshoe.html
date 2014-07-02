@@ -1,0 +1,14 @@
+
+
+<svg class="horseshoe">
+    <path class="track animatedQuick" ng-mousemove="changeScore($event);" ng-attr-d="{{trackAngle}}"></path>
+    <path class="score animatedQuick" ng-mousemove="changeScore($event);" ng-attr-d="{{potential}}" ng-class="{expand:draggable}"/></path>
+    <circle class="pos-{{percent}}" ng-mousemove="changeScore($event);" cx="50%" cy="50%" r="25"/>
+</svg>
+
+<p class="centre score">{{percent}}</p>
+
+<div id="increments">
+	<a ng-if="percent > 0" ng-click="increment('down',$event);" href="javascript:;">-</a>
+	<a ng-if="percent < 100" ng-click="increment('up',$event);" href="javascript:;">+</a>
+</div>

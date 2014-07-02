@@ -1,0 +1,48 @@
+@mixin afterBefore{
+	display:block;
+	content:".";
+	text-indent:-10000px;
+}
+
+@mixin absolutly($axis1:top,$axis2:left,$distance:0){
+	position:absolute;
+	@if $axis1 == top{top:$distance}
+	@if $axis1 == right{right:$distance}
+	@if $axis1 == bottom{bottom:$distance}
+	@if $axis1 == left{left:$distance}
+	@if $axis2 == top{top:$distance}
+	@if $axis2 == right{right:$distance}
+	@if $axis2 == bottom{bottom:$distance}
+	@if $axis2 == left{left:$distance}
+}
+
+@mixin boxSizing($padding){
+	@include box-sizing(border-box);
+	padding:$padding;
+}
+
+
+@mixin scrollbar ($basecol : $APPdark){
+
+	overflow: auto ;
+
+	&::-webkit-scrollbar {
+	    width: 6px;
+	    padding:10px;
+	}
+	 
+	&::-webkit-scrollbar-track {
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	    background: darken($basecol,10%);
+	    border-radius: 10px;
+	}
+	 
+	&::-webkit-scrollbar-thumb {
+	    border-radius: 10px;
+	    background: lighten($basecol,10%);
+	    border:1px solid darken($basecol,10%);
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	}
+
+}
+

@@ -1,0 +1,17 @@
+
+
+#dataChart{
+
+	background-color:$CXSwheatLight;
+
+	height:400px;
+
+	h3{
+
+		font:{
+			size:50px;
+			weight:300;
+		}
+		@include boxSizing(20px);
+	}
+}

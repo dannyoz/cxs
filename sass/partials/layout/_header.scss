@@ -1,0 +1,42 @@
+header{
+
+	#topBar{
+
+		background-color:$CXSdarkBlue;
+		@include boxSizing(20px);
+
+		h1{
+
+			text-align:left;
+			color:$CXSlight;
+			font:{
+				family:$font1;
+				size:14px;
+			}	
+		}
+	}
+
+	nav{
+
+		background-color:$CXSlight;
+
+		ul{
+
+			li{
+				
+				display:inline-block;
+				width:16%;
+
+				a{
+					
+					padding:10px;
+					display:block;
+					color:$CXSdarkBlue;
+					font:{
+						font-weight:700;
+					}
+				}
+			}
+		}
+	}
+}

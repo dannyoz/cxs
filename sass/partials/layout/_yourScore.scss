@@ -1,0 +1,131 @@
+
+#yourScore{
+
+	background-color:$CXSwheatLight;
+
+	h3{
+
+		margin-bottom: 50px;
+		font:{
+			size:70px;
+			weight:100;
+		}
+		@include boxSizing(70px 20px);
+	}
+
+	#data{
+
+		background-color:$CXSlight;
+		@include boxSizing(50px 20px);
+
+		#svgHorseshoe{
+
+			float:left;
+			width:48%;
+			margin-right:4%;
+			position: relative;
+
+			#circle{
+
+				width:400px;
+				height: 400px;
+				background-color:$CXSlight;
+				position:absolute;
+				top: -150px;
+				@include border-radius(100%);
+
+				.horseshoe{
+
+				    path{
+
+				    	fill: none;
+				        stroke-width: 50px;
+
+					    &.score{
+					        stroke: $CXSyellow;
+
+					        &:hover, &.expand{
+					            //stroke-width: 60px;
+					            //stroke: desaturate($CXSyellow, 55%);
+					        }
+
+					        &:after{
+
+								width:30px;
+								height:30px;
+								background-color:red;
+					        	@include afterBefore;
+					        }
+						}
+
+						&.track{
+					        stroke: $CXSwheatLight;
+						}
+
+					}
+
+					circle{
+
+					    fill:white;
+					    stroke-width: 1px;
+					    stroke: $CXSwheatDark;  
+				    }
+				}
+
+				.score{
+
+					color: $CXSdarkBlue;
+					font:{
+						weight:700;
+						family:$font1;
+						size:100px;
+					}
+				}
+
+				#increments{
+
+					bottom:60px;
+					width: $scoreBtnSize * 3;
+					@include centre(x);
+
+					a{
+						width: $scoreBtnSize;
+						height: $scoreBtnSize;
+						background-color:$CXSlight;
+						display: inline-block;
+						margin:5px;
+						@include border-radius($scoreBtnSize);
+						@include box-shadow(0 0 4px rgba(0,0,0,0.4));
+					}
+				}
+			}
+		}
+
+		#result{
+
+			float:left;
+			width:48%;
+
+			h4{
+
+				text-align: left;
+				font:{
+					family:$font1;
+					size:40px;
+					weight:700;
+				}
+			}
+
+			p{
+
+				text-align: left;
+			}
+
+			button{
+
+				float: left;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,7 @@
+
+@mixin gradientText($top:#fcfcfc,$bottom:#828282){
+	color:$top;
+	background: -webkit-linear-gradient($top,$bottom);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
+}
